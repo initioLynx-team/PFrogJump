@@ -4,7 +4,7 @@
 
 ## 🎮 About The Project
 
-**Frog Jump** is a minimalist platform game that focus on 2 mechanics jamping and throwing the tongue.
+**Frog Jump** is a minimalist platform game that focus on 2 mechanics Jumping and throwing the tongue.
 
 [Installation Guide](./Installation.md)
 
