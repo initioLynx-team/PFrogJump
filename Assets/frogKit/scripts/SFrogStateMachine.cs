@@ -4,14 +4,16 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(STongueComponent), typeof(Rigidbody2D))]
 public class SFrogStateMachine : MonoBehaviour
 {
-    public enum FrogState { Idle, Throw, PickUp, Jump, Jumping }
+    public enum FrogState { Idle, Throw, PickUp, Charging, Jump, Jumping }
 
     [Header("Current State")]
     [SerializeField] private FrogState currentState = FrogState.Idle;
 
     [Header("Physics Settings")]
     [SerializeField] private float pickUpForce = 15f;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float minJumpForce = 15f;
+    [SerializeField] private float maxJumpForce = 15f;
+    [SerializeField] private float maxChargeTime = 15f;
     [SerializeField] private float defaultGravity = 3f;
 
     [Header("Input References")]
@@ -21,7 +23,9 @@ public class SFrogStateMachine : MonoBehaviour
 
 
     private bool isTonguePressed;
-    private bool isJumpPressed;
+    private bool isJumpHeld;
+    private float chargeTimer;
+    private float CurrentChargePct => Mathf.Clamp01(chargeTimer / maxChargeTime);
     private Vector2 lookDirection;
 
     private STongueComponent tongueComponent;
@@ -48,7 +52,8 @@ public class SFrogStateMachine : MonoBehaviour
     void Sense()
     {
         isTonguePressed = tongueAction.action.IsPressed();
-        isJumpPressed = jumpAction.action.WasPressedThisFrame();
+        isJumpHeld = jumpAction.action.IsPressed();
+
         Vector2 rawInput = directionAction.action.ReadValue<Vector2>();
 
         // Check if the input is a screen position (Mouse) or a direction (Stick)
@@ -67,7 +72,9 @@ public class SFrogStateMachine : MonoBehaviour
     }
     void Think()
     {
-        if (currentState == FrogState.PickUp) return;
+        // Do not interrrupt this states
+        if (currentState == FrogState.PickUp || currentState == FrogState.Jumping) return;
+
 
 
         if (currentState == FrogState.Idle)
@@ -77,10 +84,27 @@ public class SFrogStateMachine : MonoBehaviour
                 currentState = FrogState.Throw;
                 Debug.Log("TongueThrow");
             }
-            else if (isJumpPressed)
+            else if (isJumpHeld)
+            {
+                currentState = FrogState.Charging;
+                chargeTimer = 0f;
+                Debug.Log("Charge Jump");
+            }
+        }
+        else if (currentState == FrogState.Charging)
+        {
+            if (isJumpHeld)
+            {
+                chargeTimer += Time.deltaTime;
+                chargeTimer = Mathf.Min(chargeTimer, maxChargeTime);
+                if (chargeTimer == maxChargeTime)
+                {
+                    Debug.Log("Its alredy Max");
+                } 
+            }
+            else
             {
                 currentState = FrogState.Jump;
-                Debug.Log("TongueThrow");
             }
         }
     }
@@ -89,6 +113,8 @@ public class SFrogStateMachine : MonoBehaviour
         switch (currentState)
         {
             case FrogState.Idle:
+                // add efect to know where is the frog looking at
+                break;
             case FrogState.Jumping:
                 break;
             case FrogState.Throw:
@@ -99,6 +125,9 @@ public class SFrogStateMachine : MonoBehaviour
                 break;
             case FrogState.Jump:
                 ExecuteJump();
+                break;
+            case FrogState.Charging:
+                // add effect to know how much force is being charged at
                 break;
         }
     }
@@ -122,9 +151,12 @@ public class SFrogStateMachine : MonoBehaviour
     }
     void ExecuteJump()
     {
-        rb.AddForce(lookDirection * jumpForce, ForceMode2D.Impulse);
+        float finalForce = Mathf.Lerp(minJumpForce, maxJumpForce, CurrentChargePct);
+
+        rb.AddForce(lookDirection * finalForce, ForceMode2D.Impulse);
         Debug.Log("Frog Jumped!");
-        currentState  = FrogState.Jumping;
+        chargeTimer = 0f;
+        currentState = FrogState.Jumping;
     }
 
     void pickUpPoint()
@@ -148,7 +180,7 @@ public class SFrogStateMachine : MonoBehaviour
 
     private void ResetToIdle()
     {
-        rb.gravityScale = defaultGravity; 
+        rb.gravityScale = defaultGravity;
         currentState = FrogState.Idle;
     }
 
@@ -168,4 +200,36 @@ public class SFrogStateMachine : MonoBehaviour
             jumpAction.action.Disable();
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        if (currentState == FrogState.Idle || currentState == FrogState.Charging)
+        {
+
+            Gizmos.color = Color.yellow;
+            Vector3 startPos = transform.position;
+            float indicatorLength = 0.5f;
+            if (currentState == FrogState.Charging)
+            {
+                float chargePct = CurrentChargePct;
+                bool isMax = chargePct >= 1.0f;
+                Color chargingColor = Color.Lerp(Color.green, Color.red, chargePct);
+                indicatorLength += chargePct;
+                if (isMax)
+                {
+                    // Flash between Red and White using Sine wave for "Danger" feel
+                    chargingColor = Mathf.Sin(Time.time * 20) > 0 ? Color.white : Color.red;
+                }
+                Gizmos.color = chargingColor;
+            }
+
+            Vector3 endPos = startPos + (Vector3)lookDirection * indicatorLength;
+            // Draw the main aim line
+            Gizmos.DrawLine(startPos, endPos);
+            // Draw a small solid sphere at the tip to represent the "aim" point
+            Gizmos.DrawSphere(endPos, 0.2f);
+        }
+    }
+
+
 }

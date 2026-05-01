@@ -140,7 +140,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SFrogStateMachine
   currentState: 0
-  pickUpSpeed: 15
+  pickUpForce: 15
+  minJumpForce: 15
+  maxJumpForce: 15
+  maxChargeTime: 15
+  jumpForce: 10
+  defaultGravity: 3
   tongueAction: {fileID: -3641681387185378738, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
   directionAction: {fileID: -7808537264350750916, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
   jumpAction: {fileID: -8486156240424845075, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
@@ -170,7 +175,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &2376468449686039797
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

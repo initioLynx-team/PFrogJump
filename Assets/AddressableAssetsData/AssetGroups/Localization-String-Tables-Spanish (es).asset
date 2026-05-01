@@ -14,8 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Localization-String-Tables-Spanish (es)
   m_GUID: c1cf7ae156e39a74d8f17dc91eb08862
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0e50462335e9ae941ba496422e1608c3
+    m_Address: local - Tutorial_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 274656b381c97154088d8a5b4d3d0a0c
+    m_Address: local - Cinem_Inicio_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c80995ccc67febb4a941610b18de4cc4, type: 2}
   m_SchemaSet:
-    m_Schemas: []
+    m_Schemas:
+    - {fileID: 11400000, guid: 1c95b04909cb4bc4e859e3a678af8363, type: 2}
+    - {fileID: 11400000, guid: 591fe0a1f6d983f4b8ef11d883192813, type: 2}

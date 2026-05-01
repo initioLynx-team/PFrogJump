@@ -758,7 +758,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: jumpForce
-      value: 15
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: maxJumpForce
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: minJumpForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: maxChargeTime
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_LocalPosition.x

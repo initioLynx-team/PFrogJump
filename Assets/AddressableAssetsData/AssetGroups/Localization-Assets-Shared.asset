@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Localization-Assets-Shared
   m_GUID: 44aa5c828aaa74443b219dc85caa809d
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 260527095793c594ea50eb723a681409
+    m_Address: Assets/locals/local - Cinem_Inicio Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd34ee4c4517b244fa148ff4a916c381
+    m_Address: Assets/locals/Tutorial Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c80995ccc67febb4a941610b18de4cc4, type: 2}
   m_SchemaSet:
-    m_Schemas: []
+    m_Schemas:
+    - {fileID: 11400000, guid: 0de433d9555a9664a9f128b8617b63f0, type: 2}
+    - {fileID: 11400000, guid: c70564872bc15ac4588586b2be7cdcfe, type: 2}
