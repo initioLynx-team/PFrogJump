@@ -701,7 +701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 539250844}
   - component: {fileID: 539250843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: maxJumpForce
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: minJumpForce
@@ -772,13 +772,17 @@ PrefabInstance:
       propertyPath: maxChargeTime
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.68
+      value: -2.83
       objectReference: {fileID: 0}
     - target: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.91
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -836,7 +840,7 @@ GameObject:
   - component: {fileID: 623394862}
   - component: {fileID: 623394864}
   - component: {fileID: 623394863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25214,6 +25218,14 @@ PrefabInstance:
     - target: {fileID: 5706968532115640730, guid: f02d67c1f79ce51469ffbe293df26fca, type: 3}
       propertyPath: m_Name
       value: platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706968532115640730, guid: f02d67c1f79ce51469ffbe293df26fca, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705164274074460927, guid: f02d67c1f79ce51469ffbe293df26fca, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8111454319370909334, guid: f02d67c1f79ce51469ffbe293df26fca, type: 3}
       propertyPath: m_LocalPosition.x

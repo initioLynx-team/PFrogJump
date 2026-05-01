@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,11 +17,18 @@ public class SFrogStateMachine : MonoBehaviour
     [SerializeField] private float maxChargeTime = 15f;
     [SerializeField] private float defaultGravity = 3f;
 
+    [Header("Ground Detection")]
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private Transform groundCheckPoint; 
+
     [Header("Input References")]
     public InputActionReference tongueAction;
     public InputActionReference directionAction;
     public InputActionReference jumpAction;
 
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
 
     private bool isTonguePressed;
     private bool isJumpHeld;
@@ -32,10 +40,8 @@ public class SFrogStateMachine : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 stickyTarget;
 
-
     private void OnEnable() => ToggleActions(true);
     private void OnDisable() => ToggleActions(false);
-
 
     void Start()
     {
@@ -73,7 +79,15 @@ public class SFrogStateMachine : MonoBehaviour
     void Think()
     {
         // Do not interrrupt this states
-        if (currentState == FrogState.PickUp || currentState == FrogState.Jumping) return;
+        if (currentState == FrogState.PickUp || currentState == FrogState.Jumping)
+        {
+            bool isFalling = rb.linearVelocity.y <= 0.1f;
+            if (isFalling && IsGrounded())
+            {
+                ResetToIdle();
+            }
+        }
+        ;
 
 
 
@@ -113,6 +127,7 @@ public class SFrogStateMachine : MonoBehaviour
         switch (currentState)
         {
             case FrogState.Idle:
+                HandleFacingDirection();
                 // add efect to know where is the frog looking at
                 break;
             case FrogState.Jumping:
@@ -124,12 +139,29 @@ public class SFrogStateMachine : MonoBehaviour
                 pickUpPoint();
                 break;
             case FrogState.Jump:
+                HandleFacingDirection();
+                animator.SetBool("charge",false);
                 ExecuteJump();
                 break;
             case FrogState.Charging:
+                HandleFacingDirection();
+                animator.SetBool("charge",true);
                 // add effect to know how much force is being charged at
                 break;
         }
+    }
+
+    void HandleFacingDirection()
+    {
+        if (lookDirection.x > 0.1f)
+        {
+            spriteRenderer.flipX = true;
+        } else if (lookDirection.x > - 0.1f) {
+            spriteRenderer.flipX = false;
+        }
+    }
+    private bool IsGrounded(){
+        return Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
     }
 
     void ExecuteThrow()
@@ -173,7 +205,7 @@ public class SFrogStateMachine : MonoBehaviour
     {
         if (currentState == FrogState.PickUp || currentState == FrogState.Jumping)
         {
-            ResetToIdle();
+              rb.gravityScale = defaultGravity;
             Debug.Log("Impact: State Reset to Idle");
         }
     }
@@ -182,6 +214,7 @@ public class SFrogStateMachine : MonoBehaviour
     {
         rb.gravityScale = defaultGravity;
         currentState = FrogState.Idle;
+        animator.SetTrigger("jumpEnd");
     }
 
 
