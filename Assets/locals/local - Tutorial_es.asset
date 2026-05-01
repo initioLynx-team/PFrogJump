@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: local - Tutorial_es
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: cd34ee4c4517b244fa148ff4a916c381, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 295066038272
+    m_Localized: "Pepe... no me voy a quedar aqu\xED sentado viendo c\xF3mo te vas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1083280617472
+    m_Localized: "Bueno... al menos has aprendido a no caerte de boca al primer intento.
+      \xA1Pero esto se pone m\xE1s empinado!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5591792513024
+    m_Localized: "Si quiero alcanzar esa rama, tendr\xE9 que apretar fuerte. Mantendr\xE9
+      {Jump_Key} para cargar el impulso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5591805095936
+    m_Localized: "\xA1Paco! \xA1Que el cielo no es para los que tienen la panza tan
+      llena de moscas! \xA1Vuelve al agua!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5591809290240
+    m_Localized: "\xA1Ni hablar! Si el salto se queda corto, usar\xE9 mi lengua con
+      {Grapple_Key}. \xA1Es hora de ver si esos a\xF1os pescando sirvieron de algo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5591809290241
+    m_Localized: "\xA1Eso es! Rebotar y seguir... como si el pantano me estuviera
+      escupiendo hacia arriba. \xA1Voy por ti, Pepe!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
