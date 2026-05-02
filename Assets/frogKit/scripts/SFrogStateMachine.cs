@@ -46,10 +46,14 @@ public class SFrogStateMachine : MonoBehaviour
 
     bool doobleJump = false;
 
+    public int maxThrows = 1;
+    private int throwCont = 1;
+    
     void Start()
     {
         tongueComponent = this.GetComponent<STongueComponent>();
         rb = this.GetComponent<Rigidbody2D>();
+        throwCont = maxThrows;
     }
     void Update()
     {
@@ -85,7 +89,7 @@ public class SFrogStateMachine : MonoBehaviour
         
         if (currentState == FrogState.Jumping)
         {   
-            if (isTonguePressed)
+            if (isTonguePressed && throwCont > 0)
             {
                 currentState = FrogState.Throw;
                 Debug.Log("TongueThrow");
@@ -152,6 +156,7 @@ public class SFrogStateMachine : MonoBehaviour
             case FrogState.Throw:
                 HandleFacingDirection();
                 ExecuteThrow();
+                throwCont -=1;
                 break;
             case FrogState.Throwing:
                 ExecuteThrowing();
@@ -268,6 +273,7 @@ public class SFrogStateMachine : MonoBehaviour
         rb.gravityScale = defaultGravity;
         currentState = FrogState.Idle;
         animator.SetTrigger("jumpEnd");
+        throwCont = maxThrows;
     }
 
 
