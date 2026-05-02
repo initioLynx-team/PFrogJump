@@ -38,8 +38,8 @@ public class STongueComponent : MonoBehaviour
         Vector3 origin = transform.position + mouthOffset;
 
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, range, stickyLayer);
-        Color debugColor = hit.collider != null ? Color.green : Color.red;
-        Debug.DrawRay(origin, direction * range, debugColor, 0.5f);
+      //  Color debugColor = hit.collider != null ? Color.green : Color.red;
+     //   Debug.DrawRay(origin, direction * range, debugColor, 0.5f);
 
         return hit.collider != null ? hit.point : (Vector2?)null;
     }
@@ -57,13 +57,6 @@ public class STongueComponent : MonoBehaviour
         tip.SetActive(vis);
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(transform.position, range);
-    }
-
-
     private void LateUpdate()
     {
         if (!isTongueActive) return;
@@ -76,15 +69,16 @@ public class STongueComponent : MonoBehaviour
 
         tongueVisual.SetTonguePositions(origin, endPoint);
 
-        Vector2 dir = currentTarget - (Vector2)endPoint;
-        if (tip != null)
-        {
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            tip.transform.SetPositionAndRotation(
-                new Vector3(currentTarget.x, currentTarget.y, transform.position.z - 1.0f),
-                Quaternion.Euler(0, 0, angle)
-             );
-            tip.SetActive(true);
-        }
+        Vector2 dir = (Vector2)endPoint - (Vector2)origin;
+
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+        // 3. Place the tip exactly at endPoint
+        tip.transform.SetPositionAndRotation(
+            new Vector3(endPoint.x, endPoint.y, endPoint.z - 1.0f),
+            Quaternion.Euler(0, 0, angle)
+        );
+
+        tip.SetActive(true);
     }
 }

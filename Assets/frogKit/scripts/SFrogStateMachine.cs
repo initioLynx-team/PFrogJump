@@ -1,11 +1,10 @@
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(STongueComponent), typeof(Rigidbody2D))]
 public class SFrogStateMachine : MonoBehaviour
 {
-    public enum FrogState { Idle, Throw, PickUp, Charging, Jump, Jumping }
+    public enum FrogState { Idle, Throw,Throwing, PickUp,OnAir, Charging, Jump, Jumping }
 
     [Header("Current State")]
     [SerializeField] private FrogState currentState = FrogState.Idle;
@@ -15,7 +14,7 @@ public class SFrogStateMachine : MonoBehaviour
     [SerializeField] private float minJumpForce = 15f;
     [SerializeField] private float maxJumpForce = 15f;
     [SerializeField] private float maxChargeTime = 15f;
-    [SerializeField] private float defaultGravity = 3f;
+    [SerializeField] private float defaultGravity = 1f;
 
     [Header("Ground Detection")]
     [SerializeField] private LayerMask groundLayer;
@@ -40,8 +39,12 @@ public class SFrogStateMachine : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 stickyTarget;
 
+    private float progressTrowing = 0;
+    public  float throwingSegments = 10;
     private void OnEnable() => ToggleActions(true);
     private void OnDisable() => ToggleActions(false);
+
+    bool doobleJump = false;
 
     void Start()
     {
@@ -78,14 +81,21 @@ public class SFrogStateMachine : MonoBehaviour
     }
     void Think()
     {
-        if (currentState == FrogState.PickUp) return;
+        if (currentState == FrogState.PickUp || currentState == FrogState.Throwing) return;
         
         if (currentState == FrogState.Jumping)
-        {
+        {   
             if (isTonguePressed)
             {
                 currentState = FrogState.Throw;
                 Debug.Log("TongueThrow");
+            }
+
+            if (isJumpHeld && doobleJump)
+            {
+                Debug.Log("DobleJump");
+                currentState = FrogState.Jump;
+                return;
             }
             bool isFalling = rb.linearVelocity.y <= 0.1f;
             if (isFalling && IsGrounded())
@@ -143,6 +153,9 @@ public class SFrogStateMachine : MonoBehaviour
                 HandleFacingDirection();
                 ExecuteThrow();
                 break;
+            case FrogState.Throwing:
+                ExecuteThrowing();
+                break;
             case FrogState.PickUp:
                 pickUpPoint();
                 break;
@@ -150,6 +163,7 @@ public class SFrogStateMachine : MonoBehaviour
                 HandleFacingDirection();
                 animator.SetBool("charge",false);
                 ExecuteJump();
+                doobleJump = false;
                 break;
             case FrogState.Charging:
                 HandleFacingDirection();
@@ -180,10 +194,9 @@ public class SFrogStateMachine : MonoBehaviour
             stickyTarget = hitPoint.Value;
             rb.gravityScale = 0; // Turn off gravity while zipping
             rb.linearVelocity = Vector2.zero; // Stop existing jump velocity
-            currentState = FrogState.PickUp;
             animator.SetBool("throw",true);
-            tongueComponent.SetTongueData(stickyTarget);
-
+            currentState = FrogState.Throwing;
+            progressTrowing = 0;
         }
         else
         {
@@ -194,11 +207,26 @@ public class SFrogStateMachine : MonoBehaviour
     void ExecuteJump()
     {
         float finalForce = Mathf.Lerp(minJumpForce, maxJumpForce, CurrentChargePct);
-
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = defaultGravity;
         rb.AddForce(lookDirection * finalForce, ForceMode2D.Impulse);
         Debug.Log("Frog Jumped!");
         chargeTimer = 0f;
         currentState = FrogState.Jumping;
+    }
+
+    void ExecuteThrowing()
+    {
+
+        float interpolation = (float)progressTrowing / throwingSegments;
+        Vector2 currentPos = (Vector2)transform.position;
+        Vector2 targetPos = Vector2.Lerp(currentPos, stickyTarget, interpolation);
+        tongueComponent.SetTongueData(targetPos);
+        progressTrowing+=1;
+        if (progressTrowing >= throwingSegments)
+        {
+            currentState = FrogState.PickUp;
+        }
     }
 
     void pickUpPoint()
@@ -210,12 +238,22 @@ public class SFrogStateMachine : MonoBehaviour
             Debug.Log("Picking up");
             animator.SetBool("throw",false);
             currentState = FrogState.Jumping;
+            doobleJump = true;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (currentState == FrogState.PickUp || currentState == FrogState.Jumping)
+        if (currentState == FrogState.PickUp )
+        {
+            tongueComponent.Visible(false);
+            rb.gravityScale = defaultGravity;
+            currentState = FrogState.Jumping;
+            doobleJump = true;
+            animator.SetBool("throw",false);
+            Debug.Log("Impact: Reset gravity");
+        }
+        if (currentState == FrogState.Jumping)
         {
             tongueComponent.Visible(false);
             rb.gravityScale = defaultGravity;

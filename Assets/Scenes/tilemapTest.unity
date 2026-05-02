@@ -774,11 +774,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: minJumpForce
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: maxChargeTime
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: defaultGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3251521494132333147, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: groundLayer.m_Bits
@@ -851,6 +855,18 @@ PrefabInstance:
     - target: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551969337269379038, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551969337269379038, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551969337269379038, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7446262324766524048, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_SortingOrder
