@@ -78,9 +78,15 @@ public class SFrogStateMachine : MonoBehaviour
     }
     void Think()
     {
-        // Do not interrrupt this states
-        if (currentState == FrogState.PickUp || currentState == FrogState.Jumping)
+        if (currentState == FrogState.PickUp) return;
+        
+        if (currentState == FrogState.Jumping)
         {
+            if (isTonguePressed)
+            {
+                currentState = FrogState.Throw;
+                Debug.Log("TongueThrow");
+            }
             bool isFalling = rb.linearVelocity.y <= 0.1f;
             if (isFalling && IsGrounded())
             {
@@ -127,12 +133,14 @@ public class SFrogStateMachine : MonoBehaviour
         switch (currentState)
         {
             case FrogState.Idle:
-                HandleFacingDirection();
                 // add efect to know where is the frog looking at
+                HandleFacingDirection();
                 break;
             case FrogState.Jumping:
+                HandleFacingDirection();
                 break;
             case FrogState.Throw:
+                HandleFacingDirection();
                 ExecuteThrow();
                 break;
             case FrogState.PickUp:
@@ -167,13 +175,15 @@ public class SFrogStateMachine : MonoBehaviour
     void ExecuteThrow()
     {
         Vector2? hitPoint = tongueComponent.FlickTongue(lookDirection);
-        //TODO: add throwing state with animation
         if (hitPoint != null)
         {
             stickyTarget = hitPoint.Value;
             rb.gravityScale = 0; // Turn off gravity while zipping
             rb.linearVelocity = Vector2.zero; // Stop existing jump velocity
             currentState = FrogState.PickUp;
+            animator.SetBool("throw",true);
+            tongueComponent.SetTongueData(stickyTarget);
+
         }
         else
         {
@@ -194,10 +204,12 @@ public class SFrogStateMachine : MonoBehaviour
     void pickUpPoint()
     {
         transform.position = Vector2.MoveTowards(transform.position, stickyTarget, pickUpForce * Time.deltaTime);
-        // If we reached the point exactly, stop zipping
         if (Vector2.Distance(transform.position, stickyTarget) < 0.05f)
         {
-            currentState = FrogState.Idle;
+            tongueComponent.Visible(false);
+            Debug.Log("Picking up");
+            animator.SetBool("throw",false);
+            currentState = FrogState.Jumping;
         }
     }
 
@@ -205,8 +217,11 @@ public class SFrogStateMachine : MonoBehaviour
     {
         if (currentState == FrogState.PickUp || currentState == FrogState.Jumping)
         {
-              rb.gravityScale = defaultGravity;
-            Debug.Log("Impact: State Reset to Idle");
+            tongueComponent.Visible(false);
+            rb.gravityScale = defaultGravity;
+            currentState = FrogState.Jumping;
+            animator.SetBool("throw",false);
+            Debug.Log("Impact: Reset gravity");
         }
     }
 

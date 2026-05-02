@@ -1,52 +1,90 @@
+using UnityEditor.Search;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class STongueComponent : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float range = 5f;
     [SerializeField] private LayerMask stickyLayer;
+    [SerializeField] private float tongueWidth = 0.3f;
+    [SerializeField] private float displayDuration = 0.15f;
 
-    
-    [Header("Visuals (Optional)")]
-    [SerializeField] private LineRenderer lineRenderer;
+    [Header("Visuals ")]
+    [SerializeField] private LineController tongueVisual;
+    [SerializeField] private GameObject tip;
 
+    [Header("Offsets")]
+    [SerializeField] private float horizontalOffset = 0.5f; // Distance from center to mouth
+    [SerializeField] private float verticalOffset = 0.2f;   // Height of the mouth
+
+
+    private Vector2 currentTarget;
+    private bool isTongueActive = false;
+
+
+    private Vector3 mouthOffset;
     private void Start()
     {
-        if (lineRenderer != null) lineRenderer.enabled = false;
+        tongueVisual.setWidth(tongueWidth);
+        Visible(false);
     }
+
 
     public Vector2? FlickTongue(Vector2 direction)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, range, stickyLayer);
-       
-        // 2. Quick Debug Ray (Visible in Scene and Game view with Gizmos ON)
+        float side = direction.normalized.x >= 0 ? 1 : -1;
+        mouthOffset = new Vector3(horizontalOffset * side, verticalOffset, 0);
+        Vector3 origin = transform.position + mouthOffset;
+
+        RaycastHit2D hit = Physics2D.Raycast(origin, direction, range, stickyLayer);
         Color debugColor = hit.collider != null ? Color.green : Color.red;
-        Debug.DrawRay(transform.position, direction * range, debugColor, 0.5f);
+        Debug.DrawRay(origin, direction * range, debugColor, 0.5f);
 
-        if (hit.collider != null) return hit.point;
-
-        UpdateVisuals(transform.position + (Vector3)(direction * range));
-        return null;
+        return hit.collider != null ? hit.point : (Vector2?)null;
     }
 
-    private void UpdateVisuals(Vector3 endPoint)
+    public void SetTongueData(Vector2 target)
     {
-        if (lineRenderer == null) return;
-        
-        lineRenderer.enabled = true;
-        lineRenderer.SetPosition(0, transform.position);
-        lineRenderer.SetPosition(1, endPoint);
-        
-        // Hide tongue after a short delay
-        Invoke(nameof(HideTongue), 0.2f);
+        currentTarget = target;
+        Visible(true);
     }
 
-    private void HideTongue() => lineRenderer.enabled = false;
+    public void Visible(bool vis)
+    {
+        isTongueActive = vis;
+        tongueVisual.ToggleVisibility(vis);
+        tip.SetActive(vis);
+    }
 
-    // Debugging range in the editor
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+
+    private void LateUpdate()
+    {
+        if (!isTongueActive) return;
+
+        float side = currentTarget.x >= 0 ? 1 : -1;
+        Vector3 mouthOffset = new Vector3(horizontalOffset * side, verticalOffset, 0);
+        Vector3 origin = transform.position + mouthOffset;
+
+        Vector3 endPoint = new Vector3(currentTarget.x, currentTarget.y, transform.position.z);
+
+        tongueVisual.SetTonguePositions(origin, endPoint);
+
+        Vector2 dir = currentTarget - (Vector2)endPoint;
+        if (tip != null)
+        {
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            tip.transform.SetPositionAndRotation(
+                new Vector3(currentTarget.x, currentTarget.y, transform.position.z - 1.0f),
+                Quaternion.Euler(0, 0, angle)
+             );
+            tip.SetActive(true);
+        }
     }
 }
