@@ -201,7 +201,6 @@ public class SFrogStateMachine : MonoBehaviour
                 break;
             case FrogState.Charging:
                 HandleFacingDirection();
-                rb.linearVelocity = Vector2.zero;
                 animator.SetBool("charge", true);
                 // add effect to know how much force is being charged at
                 break;
