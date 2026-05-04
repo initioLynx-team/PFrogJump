@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/zona 1.unity
+    guid: 370638cc89da63a4f9ecb87ea3665fb6
+  - enabled: 1
+    path: Assets/Scenes/zona 2.unity
+    guid: d0d1906ba47bbf54d923e19b1f20bfd7
+  - enabled: 1
+    path: Assets/Scenes/zona 3.unity
+    guid: 91620921ae7c8064cace4b26bc5bb89d
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 86feae162c12e4046938977ff2440027, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
