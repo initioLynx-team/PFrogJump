@@ -40,7 +40,7 @@ public class SFallingPlatform : MonoBehaviour
             if (collision.contacts[0].normal.y < -0.5f)
             {
                 isPlayerOn = true;
-            }e
+            }
         }
     }
     private void OnCollisionExit2D(Collision2D collision)

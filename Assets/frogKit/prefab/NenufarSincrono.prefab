@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 922143744733490069}
   - component: {fileID: 1683443984236125889}
   - component: {fileID: 2904012040728865849}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NenufarSincrono
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7704914350898499642}
   - component: {fileID: 8832634265232000728}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

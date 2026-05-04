@@ -12,7 +12,6 @@ public class SMovingPlatform : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
-
         moveDistance = new Vector2(5f,0f);
     }
 
