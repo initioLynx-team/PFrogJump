@@ -16,6 +16,11 @@ public class SFrogStateMachine : MonoBehaviour
     [SerializeField] private float maxChargeTime = 15f;
     [SerializeField] private float defaultGravity = 1f;
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float speedThreshold = 0.2f;
+
+
+    public PhysicsMaterial2D ogPMat;
+    public PhysicsMaterial2D slipperyPMat;
 
     [Header("Ground Detection")]
     [SerializeField] private LayerMask groundLayer;
@@ -51,6 +56,7 @@ public class SFrogStateMachine : MonoBehaviour
 
     public int maxThrows = 1;
     private int throwCont = 1;
+    private bool isOnSlipperyFloor;
 
     void Start()
     {
@@ -73,7 +79,6 @@ public class SFrogStateMachine : MonoBehaviour
         Vector2 rawInput = directionAction.action.ReadValue<Vector2>();
 
         movement = moveAction.action.ReadValue<Vector2>();
-        Debug.Log($"Stick Value: {movement}");
 
         // Check if the input is a screen position (Mouse) or a direction (Stick)
         // Mouse positions are usually large numbers (e.g., 1920x1080)
@@ -134,7 +139,7 @@ public class SFrogStateMachine : MonoBehaviour
                 currentState = FrogState.Throw;
                 Debug.Log("TongueThrow");
             }
-            else if (isJumpHeld)
+            else if (isJumpHeld && rb.linearVelocity.magnitude < speedThreshold)
             {
                 currentState = FrogState.Charging;
                 chargeTimer = 0f;
@@ -204,6 +209,7 @@ public class SFrogStateMachine : MonoBehaviour
     }
     void ExecuteMovement()
     {
+
         rb.linearVelocity = new Vector2(movement.x * moveSpeed, rb.linearVelocity.y);
         if (movement.x > 0.1f) spriteRenderer.flipX = true;
         else if (movement.x < -0.1f) spriteRenderer.flipX = false;
@@ -304,7 +310,10 @@ public class SFrogStateMachine : MonoBehaviour
 
     private void ResetToIdle()
     {
-        rb.linearVelocity = Vector2.zero;
+        if (!isOnSlipperyFloor)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
         rb.gravityScale = defaultGravity;
         currentState = FrogState.Idle;
         animator.SetTrigger("jumpEnd");
@@ -357,6 +366,24 @@ public class SFrogStateMachine : MonoBehaviour
             Gizmos.DrawLine(startPos, endPos);
             // Draw a small solid sphere at the tip to represent the "aim" point
             Gizmos.DrawSphere(endPos, 0.2f);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Slippery"))
+        {
+            isOnSlipperyFloor = true;
+            rb.sharedMaterial = slipperyPMat;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Slippery"))
+        {
+            rb.sharedMaterial = ogPMat;
+            isOnSlipperyFloor = false;
         }
     }
 

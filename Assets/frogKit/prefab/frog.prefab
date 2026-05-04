@@ -172,6 +172,8 @@ MonoBehaviour:
   maxChargeTime: 15
   defaultGravity: 3
   moveSpeed: 5
+  ogPMat: {fileID: 6200000, guid: f0a32c19a26f2ef4eb43dd8b59885a3b, type: 2}
+  slipperyPMat: {fileID: 6200000, guid: 8124b4b581993104697a6addf31b32e4, type: 2}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
