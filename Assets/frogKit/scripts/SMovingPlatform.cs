@@ -4,24 +4,23 @@ public class SMovingPlatform : MonoBehaviour
 {
 
     [Header("MovementSettings")]
-    public Vector2 moveDistance = new Vector2(5f,0f);
+    public Vector2 moveDistance;
     public float speed = 2f;
 
     private Vector2 startPosition;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         startPosition = transform.position;
+
+        moveDistance = new Vector2(5f,0f);
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Mathf.PingPong(time, length) returns a value that moves 0 -> length -> 0
         float moveFactor = Mathf.PingPong(Time.time * speed, 1f);
 
-        // Interpolate between start and start + distance
         transform.position = Vector3.Lerp(startPosition, startPosition + moveDistance, moveFactor);
     }
 
