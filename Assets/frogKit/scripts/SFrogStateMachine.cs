@@ -354,16 +354,13 @@ public class SFrogStateMachine : MonoBehaviour
                 indicatorLength += chargePct;
                 if (isMax)
                 {
-                    // Flash between Red and White using Sine wave for "Danger" feel
                     chargingColor = Mathf.Sin(Time.time * 20) > 0 ? Color.white : Color.red;
                 }
                 Gizmos.color = chargingColor;
             }
 
             Vector3 endPos = startPos + (Vector3)lookDirection * indicatorLength;
-            // Draw the main aim line
             Gizmos.DrawLine(startPos, endPos);
-            // Draw a small solid sphere at the tip to represent the "aim" point
             Gizmos.DrawSphere(endPos, 0.2f);
         }
     }

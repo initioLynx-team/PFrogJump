@@ -10,13 +10,10 @@ public class SSceneTp : MonoBehaviour
     [HideInInspector]
     public string sceneName;
 
-    [Header("Shader Control")]
-    private Material portalMaterial;
-    private float fogIntensity = 0f;
+
 
     void Start()
     {
-        portalMaterial = GetComponent<Renderer>().material;
     }
 
     // Update is called once per frame
@@ -29,8 +26,6 @@ public class SSceneTp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            fogIntensity = Mathf.Lerp(fogIntensity, 1f, Time.deltaTime);
-            portalMaterial.SetFloat("_FogOpacity", fogIntensity);
 
             Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
 

@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 3578309082165682073}
   - component: {fileID: -4869679152155673851}
   - component: {fileID: 1538962210958710350}
+  - component: {fileID: 2009191050929178205}
   m_Layer: 0
   m_Name: frog
   m_TagString: Player
@@ -172,6 +173,7 @@ MonoBehaviour:
   maxChargeTime: 15
   defaultGravity: 3
   moveSpeed: 5
+  speedThreshold: 0.2
   ogPMat: {fileID: 6200000, guid: f0a32c19a26f2ef4eb43dd8b59885a3b, type: 2}
   slipperyPMat: {fileID: 6200000, guid: 8124b4b581993104697a6addf31b32e4, type: 2}
   groundLayer:
@@ -282,6 +284,36 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.84251195, y: 1.063745}
   m_EdgeRadius: 0
+--- !u!114 &2009191050929178205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200857619669752424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: 
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &6920056604409967301
 GameObject:
   m_ObjectHideFlags: 0
