@@ -8,7 +8,6 @@ public class STongueComponent : MonoBehaviour
     [SerializeField] private float range = 5f;
     [SerializeField] private LayerMask stickyLayer;
     [SerializeField] private float tongueWidth = 0.3f;
-    [SerializeField] private float displayDuration = 0.15f;
 
     [Header("Visuals ")]
     [SerializeField] private LineController tongueVisual;

@@ -123,11 +123,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4086902946562197766}
-  - component: {fileID: 3251521494132333147}
   - component: {fileID: 3578309082165682073}
   - component: {fileID: -4869679152155673851}
   - component: {fileID: 1538962210958710350}
   - component: {fileID: 2009191050929178205}
+  - component: {fileID: 746273050318602789}
   m_Layer: 0
   m_Name: frog
   m_TagString: Player
@@ -154,41 +154,6 @@ Transform:
   - {fileID: 4551969337269379038}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3251521494132333147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2200857619669752424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 879c77f78d436cc45935e55327dbd185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SFrogStateMachine
-  currentState: 0
-  pickUpForce: 15
-  minJumpForce: 15
-  maxJumpForce: 15
-  maxChargeTime: 15
-  defaultGravity: 3
-  moveSpeed: 5
-  speedThreshold: 0.2
-  ogPMat: {fileID: 6200000, guid: f0a32c19a26f2ef4eb43dd8b59885a3b, type: 2}
-  slipperyPMat: {fileID: 6200000, guid: 8124b4b581993104697a6addf31b32e4, type: 2}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 1
-  groundCheckRadius: 0.2
-  groundCheckPoint: {fileID: 3047850447242903835}
-  tongueAction: {fileID: -3641681387185378738, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
-  directionAction: {fileID: -7808537264350750916, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
-  moveAction: {fileID: -5084193526993647131, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
-  jumpAction: {fileID: -8486156240424845075, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
-  animator: {fileID: 8041330675112253608}
-  spriteRenderer: {fileID: 2254675475272666222}
-  throwingSegments: 10
-  maxThrows: 1
 --- !u!50 &3578309082165682073
 Rigidbody2D:
   serializedVersion: 5
@@ -314,6 +279,51 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &746273050318602789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200857619669752424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0136f56c2f728324781cc9fd7b3145a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFrogController
+  currentStateName: 
+  pickUpForce: 15
+  minJumpForce: 10
+  maxJumpForce: 20
+  maxChargeTime: 1.5
+  defaultGravity: 1
+  moveSpeed: 5
+  speedThreshold: 0.2
+  ogPMat: {fileID: 6200000, guid: f0a32c19a26f2ef4eb43dd8b59885a3b, type: 2}
+  slipperyPMat: {fileID: 6200000, guid: 8124b4b581993104697a6addf31b32e4, type: 2}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckRadius: 0.2
+  groundCheckPoint: {fileID: 3047850447242903835}
+  animator: {fileID: 8041330675112253608}
+  spriteRenderer: {fileID: 2254675475272666222}
+  maxThrows: 1
+  throwingSegments: 10
+  lookDirection: {x: 0, y: 0}
+  movement: {x: 0, y: 0}
+  isTonguePressed: 0
+  isOnSlipperyFloor: 0
+  isJumpHeld: 0
+  doubleJump: 0
+  throwCount: 0
+  progressTrowing: 0
+  stickyTarget: {x: 0, y: 0}
+  CurrentChargePct: 0
+  tongueAction: {fileID: -3641681387185378738, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
+  directionAction: {fileID: -7808537264350750916, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
+  moveAction: {fileID: -5084193526993647131, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
+  jumpAction: {fileID: -8486156240424845075, guid: 5786ac3bea4ac7a41825442129ef9a08, type: 3}
 --- !u!1 &6920056604409967301
 GameObject:
   m_ObjectHideFlags: 0
