@@ -7,6 +7,7 @@ public class ThrowState : IFrogState
     public void Enter(SFrogController frog)
     {
         frog.throwCount -= 1;
+        frog.PlaySFX(frog.throwSound);
     }
 
     public void Exit(SFrogController frog)

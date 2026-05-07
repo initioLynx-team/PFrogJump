@@ -70,6 +70,12 @@ public class SFrogController : MonoBehaviour
     public InputActionReference tongueAction, directionAction, moveAction, jumpAction;
 
 
+    [Header("Audio")]
+    public AudioSource sfxSource;
+    public AudioClip jumpSound;
+    public AudioClip landSound;
+    public AudioClip throwSound;
+
     private void OnEnable() => ToggleActions(true);
     private void OnDisable() => ToggleActions(false);
     private void Awake()
@@ -158,7 +164,17 @@ public class SFrogController : MonoBehaviour
     }
 
 
+    public void PlaySFX(AudioClip clip, bool randomizePitch = true)
+    {
+        if (clip == null || sfxSource == null) return;
 
+        if (randomizePitch)
+            sfxSource.pitch = Random.Range(0.9f, 1.1f);
+        else
+            sfxSource.pitch = 1f;
+
+        sfxSource.PlayOneShot(clip);
+    }
     private void OnDrawGizmos()
     {
         if (_currentState == Charging)

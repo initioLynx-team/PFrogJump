@@ -12,6 +12,7 @@ public class JumpState : IFrogState
 
         float finalForce = Mathf.Lerp(frog.minJumpForce, frog.maxJumpForce, frog.CurrentChargePct);
         frog.Rb.AddForce(frog.lookDirection * finalForce, ForceMode2D.Impulse);
+        frog.PlaySFX(frog.jumpSound);
     }
 
     public void Exit(SFrogController frog)

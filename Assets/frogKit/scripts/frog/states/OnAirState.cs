@@ -29,6 +29,7 @@ public class OnAirState : IFrogState
         }
         if (frog.Rb.linearVelocity.y <= 0.2f && frog.IsGrounded())
         {
+            frog.PlaySFX(frog.landSound);
             return SFrogController.Idle;
         }
 
