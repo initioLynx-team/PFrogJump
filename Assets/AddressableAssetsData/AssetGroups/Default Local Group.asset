@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Default Local Group
   m_GUID: 8f8dfc4d95a57f74ca531577dbfe5d96
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 4e33259cd62eee945b1eaecf7b34970f
+    m_Address: Assets/frogKit/art/VCR_OSD_MONO_1.001.ttf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c80995ccc67febb4a941610b18de4cc4, type: 2}
   m_SchemaSet:
