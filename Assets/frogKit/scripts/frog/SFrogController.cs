@@ -28,7 +28,8 @@ public class SFrogController : MonoBehaviour
     public float defaultGravity = 1f;
     public float moveSpeed = 5f;
     public float speedThreshold = 0.2f;
-
+    public float releaseBoost = 6f;
+    
     [Header("Materials")]
     public PhysicsMaterial2D ogPMat;
     public PhysicsMaterial2D slipperyPMat;

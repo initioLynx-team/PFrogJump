@@ -3,10 +3,11 @@ using UnityEngine;
 public class PickUpState : IFrogState
 {
     private static readonly int ThrowHash = Animator.StringToHash("throw");
+    private Vector2 launchDir;
 
     public void Enter(SFrogController frog)
     {
-
+        launchDir = (frog.stickyTarget - (Vector2)frog.transform.position).normalized;
     }
     public void Exit(SFrogController frog)
     {
@@ -14,6 +15,8 @@ public class PickUpState : IFrogState
         frog.doubleJump = true;
         frog.Tongue.Visible(false);
         frog.Rb.gravityScale = frog.defaultGravity;
+
+        frog.Rb.AddForce(launchDir * frog.releaseBoost, ForceMode2D.Impulse);
     }
 
     public void FixedTick(SFrogController frog)

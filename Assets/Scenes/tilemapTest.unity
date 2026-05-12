@@ -621,6 +621,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 831783709095838779, guid: 615d217dfef7f414ead29fcfe47c1d97, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4219603253852755575, guid: 615d217dfef7f414ead29fcfe47c1d97, type: 3}
       propertyPath: m_Name
       value: Fly
@@ -664,6 +668,10 @@ PrefabInstance:
     - target: {fileID: 4467225470198377083, guid: 615d217dfef7f414ead29fcfe47c1d97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568261773700463489, guid: 615d217dfef7f414ead29fcfe47c1d97, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
