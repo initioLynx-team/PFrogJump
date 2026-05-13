@@ -272,6 +272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_5
       objectReference: {fileID: 0}
+    - target: {fileID: 4930627515794481463, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5374234174988774749, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
       propertyPath: m_LocalScale.x
       value: 6
@@ -9764,7 +9768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748b5e0b36535894d8f82603b6d506f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SCamera
-  target: {fileID: 0}
+  target: {fileID: 2061640407}
   followSpeed: 5
   offset: {x: 0, y: 0, z: -10}
 --- !u!1001 &1063086016
@@ -9778,6 +9782,10 @@ PrefabInstance:
     - target: {fileID: 4930627515794481463, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
       propertyPath: m_Name
       value: Platform_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930627515794481463, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5374234174988774749, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
       propertyPath: m_LocalScale.x
@@ -9843,6 +9851,10 @@ PrefabInstance:
     - target: {fileID: 4930627515794481463, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
       propertyPath: m_Name
       value: Platform_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930627515794481463, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5374234174988774749, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
       propertyPath: m_LocalScale.x
@@ -9939,6 +9951,10 @@ PrefabInstance:
     - target: {fileID: 4930627515794481463, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
       propertyPath: m_Name
       value: Platform_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930627515794481463, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5374234174988774749, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
       propertyPath: m_LocalScale.x
@@ -10067,6 +10083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4930627515794481463, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5374234174988774749, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -10134,7 +10154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1903854767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10165,6 +10185,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5374234174988774749, guid: 4f62d61c04dd9404ab5da3d0b041ae83, type: 3}
   m_PrefabInstance: {fileID: 1199513881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2061640407 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+  m_PrefabInstance: {fileID: 177002352}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2094908581 stripped
 Transform:
