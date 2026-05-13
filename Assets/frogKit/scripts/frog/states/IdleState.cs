@@ -17,7 +17,7 @@ public class IdleState : IFrogState
 
     public void Exit(SFrogController frog)
     {
-
+        frog.indicatorLook.SetVisible(false);
     }
 
     public void FixedTick(SFrogController frog) { /* No physics needed while stationary */ }
@@ -25,6 +25,7 @@ public class IdleState : IFrogState
     public IFrogState Tick(SFrogController frog)
     {
         frog.HandleFacingDirection();
+        frog.indicatorLook.UpdateLookDirection(frog.lookDirection);
 
         if (frog.isTonguePressed)
         {

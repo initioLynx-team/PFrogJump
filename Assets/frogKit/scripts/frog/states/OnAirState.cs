@@ -6,17 +6,19 @@ public class OnAirState : IFrogState
 
     public void Enter(SFrogController frog)
     {
-        frog.animator.SetBool(GroundedHash,false);
+        frog.animator.SetBool(GroundedHash, false);
 
     }
 
     public void Exit(SFrogController frog)
     {
+        frog.indicatorLook.SetVisible(false);
     }
 
     public IFrogState Tick(SFrogController frog)
     {
         frog.HandleFacingDirection();
+        frog.indicatorLook.UpdateLookDirection(frog.lookDirection);
 
         if (frog.isTonguePressed && frog.throwCount > 0)
         {
@@ -24,7 +26,7 @@ public class OnAirState : IFrogState
         }
         if (frog.isJumpHeld && frog.doubleJump)
         {
-            frog.animator.SetBool(GroundedHash,true);
+            frog.animator.SetBool(GroundedHash, true);
             return SFrogController.Jump;
         }
         if (frog.IsOnGround())

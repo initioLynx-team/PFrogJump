@@ -12,11 +12,12 @@ public class MovingState : IFrogState
     public void Exit(SFrogController frog)
     {
         frog.animator.SetBool(MovingHash, false);
-
+        frog.indicatorLook.SetVisible(false);
     }
 
     public IFrogState Tick(SFrogController frog)
     {
+        frog.indicatorLook.UpdateLookDirection(frog.lookDirection);
         if (frog.movement.sqrMagnitude <= 0.03f) return SFrogController.Idle;
         frog.spriteRenderer.flipX = frog.movement.x > 0.1f;
         if (!frog.IsOnGround())

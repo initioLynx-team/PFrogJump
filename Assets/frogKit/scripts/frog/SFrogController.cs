@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
-
 [RequireComponent(typeof(STongueComponent), typeof(Rigidbody2D))]
+
+
+[RequireComponent(typeof(SIndicatorLook))]
 public class SFrogController : MonoBehaviour
 {
 
@@ -44,7 +45,7 @@ public class SFrogController : MonoBehaviour
     [Header("Animation/Visuals")]
     public Animator animator;
     public SpriteRenderer spriteRenderer;
-
+    public SIndicatorLook indicatorLook;
 
     public int maxThrows = 1;
     public float throwingSegments = 10;
@@ -83,6 +84,7 @@ public class SFrogController : MonoBehaviour
     {
         Rb = GetComponent<Rigidbody2D>();
         Tongue = GetComponent<STongueComponent>();
+        indicatorLook = GetComponent<SIndicatorLook>();
         throwCount = 1; // Default
     }
     private void Start() => TransitionTo(Idle);
