@@ -27,7 +27,7 @@ public class OnAirState : IFrogState
             frog.animator.SetBool(GroundedHash,true);
             return SFrogController.Jump;
         }
-        if (frog.Rb.linearVelocity.y <= 0.2f && frog.IsGrounded())
+        if (frog.IsOnGround())
         {
             frog.PlaySFX(frog.landSound);
             return SFrogController.Idle;

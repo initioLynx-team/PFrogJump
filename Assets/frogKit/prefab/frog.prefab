@@ -299,12 +299,13 @@ MonoBehaviour:
   defaultGravity: 1
   moveSpeed: 5
   speedThreshold: 0.2
+  releaseBoost: 6
   ogPMat: {fileID: 6200000, guid: f0a32c19a26f2ef4eb43dd8b59885a3b, type: 2}
   slipperyPMat: {fileID: 6200000, guid: 8124b4b581993104697a6addf31b32e4, type: 2}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  groundCheckRadius: 0.2
+  groundCheckRadius: 0.9
   groundCheckPoint: {fileID: 3047850447242903835}
   animator: {fileID: 8041330675112253608}
   spriteRenderer: {fileID: 2254675475272666222}
@@ -542,8 +543,8 @@ Transform:
   m_GameObject: {fileID: 8656780080279643895}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.016, y: -0.563, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalPosition: {x: 0.017, y: -0.265, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4086902946562197766}
@@ -597,7 +598,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

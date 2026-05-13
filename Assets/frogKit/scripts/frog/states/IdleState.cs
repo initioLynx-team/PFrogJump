@@ -12,7 +12,7 @@ public class IdleState : IFrogState
         }
         frog.Rb.gravityScale = frog.defaultGravity;
         frog.throwCount = frog.maxThrows;
-        frog.animator.SetBool(GroundedHash,true);
+        frog.animator.SetBool(GroundedHash, true);
     }
 
     public void Exit(SFrogController frog)
@@ -37,6 +37,10 @@ public class IdleState : IFrogState
         else if (frog.movement.sqrMagnitude > 0.03f)
         {
             return SFrogController.Moving;
+        }
+        if (!frog.IsOnGround())
+        {
+            return SFrogController.OnAir;
         }
 
         return this;

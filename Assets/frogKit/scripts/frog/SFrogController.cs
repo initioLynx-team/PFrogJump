@@ -29,7 +29,7 @@ public class SFrogController : MonoBehaviour
     public float moveSpeed = 5f;
     public float speedThreshold = 0.2f;
     public float releaseBoost = 6f;
-    
+
     [Header("Materials")]
     public PhysicsMaterial2D ogPMat;
     public PhysicsMaterial2D slipperyPMat;
@@ -124,7 +124,8 @@ public class SFrogController : MonoBehaviour
         Debug.Log($"State: {newState.GetType().Name}");
     }
 
-    public bool IsGrounded() => Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
+    private bool CheckGroundLayer() => Physics2D.OverlapBox(groundCheckPoint.position, groundCheckPoint.localScale, 0f, groundLayer);
+    public bool IsOnGround() => Rb.linearVelocity.y <= 0.2f && CheckGroundLayer();
     public void HandleFacingDirection()
     {
         if (lookDirection.x > 0.1f)
