@@ -2,18 +2,31 @@ using UnityEngine;
 
 public class SCamera : MonoBehaviour
 {
-
-    [Header("Target Settings")]
     public Transform target;
-    public float followSpeed = 5f;
-    [Header("offset Settings")]
-    public Vector3 offset = new Vector3(0,0,-10);
-    void Start(){}
-    void Update(){}
+    public float smoothSpeed = 5f;
+    public float yOffset = 2f;
+
+    private float fixedX;
+
+    void Start()
+    {
+        fixedX = transform.position.x;
+    }
+
     void LateUpdate()
     {
         if (target == null) return;
-        Vector3 targetPosition = target.position + offset;
-        transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+
+        Vector3 desiredPosition = new Vector3(
+            fixedX,
+            target.position.y + yOffset,
+            transform.position.z
+        );
+
+        transform.position = Vector3.Lerp(
+            transform.position,
+            desiredPosition,
+            smoothSpeed * Time.deltaTime
+        );
     }
 }
