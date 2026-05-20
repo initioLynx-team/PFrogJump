@@ -22,7 +22,7 @@ public class SFallingPlatform : MonoBehaviour
     private Vector3 destination;
     private Collider2D coll;
 
-    private SpriteRenderer sprite;
+    public SpriteRenderer sprite;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
