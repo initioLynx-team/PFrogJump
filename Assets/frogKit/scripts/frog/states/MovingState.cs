@@ -20,7 +20,7 @@ public class MovingState : IFrogState
         frog.indicatorLook.UpdateLookDirection(frog.lookDirection);
         if (frog.movement.sqrMagnitude <= 0.03f) return SFrogController.Idle;
         frog.spriteRenderer.flipX = frog.movement.x > 0.1f;
-        if (!frog.IsOnGround())
+        if (frog.Rb.linearVelocity.y > 0.3f && frog.CheckGroundLayer())
         {
             return SFrogController.OnAir;
         }

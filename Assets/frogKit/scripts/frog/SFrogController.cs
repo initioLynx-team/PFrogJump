@@ -126,8 +126,7 @@ public class SFrogController : MonoBehaviour
         Debug.Log($"State: {newState.GetType().Name}");
     }
 
-    private bool CheckGroundLayer() => Physics2D.OverlapBox(groundCheckPoint.position, groundCheckPoint.localScale, 0f, groundLayer);
-    public bool IsOnGround() => Rb.linearVelocity.y <= 0.2f && CheckGroundLayer();
+    public bool CheckGroundLayer() => Physics2D.OverlapBox(groundCheckPoint.position, groundCheckPoint.lossyScale, 0f, groundLayer);
     public void HandleFacingDirection()
     {
         if (lookDirection.x > 0.1f)

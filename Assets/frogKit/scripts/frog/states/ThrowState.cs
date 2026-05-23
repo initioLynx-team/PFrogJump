@@ -37,7 +37,9 @@ public class ThrowState : IFrogState
         Vector2? hitPoint = frog.Tongue.FlickTongue(frog.lookDirection);
         if (hitPoint == null)
         {
-            return frog.IsOnGround() ? SFrogController.Idle : SFrogController.OnAir;
+            return frog.Rb.linearVelocity.y < 0.3f && frog.CheckGroundLayer() 
+            ? SFrogController.Idle 
+            : SFrogController.OnAir;
         }
         hit = true;
         frog.stickyTarget = hitPoint.Value;

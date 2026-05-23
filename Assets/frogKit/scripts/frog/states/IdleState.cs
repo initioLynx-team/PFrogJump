@@ -39,7 +39,7 @@ public class IdleState : IFrogState
         {
             return SFrogController.Moving;
         }
-        if (!frog.IsOnGround())
+        if (frog.Rb.linearVelocity.y > 0.3f && !frog.CheckGroundLayer())
         {
             return SFrogController.OnAir;
         }
