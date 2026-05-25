@@ -17,7 +17,81 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 260527095793c594ea50eb723a681409, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 21240901632
+    m_Localized: "Look at those stars, Paco. I wish fireflies were that big... we
+      wouldn\u2019t have to work for a month."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873152
+    m_Localized: "You\u2019ve never worked a whole month in your life, Pepe. Stop
+      staring at the lights and enjoy the cool breeze."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873153
+    m_Localized: "Look at that... It\u2019s the mother of all flies. It\u2019s...
+      it\u2019s glorious."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873154
+    m_Localized: "Don't you dare. That thing is the size of an old shoe. You\u2019re
+      gonna pop like a balloon."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873155
+    m_Localized: "You only live once, partner. Bon app\xE9tit!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873156
+    m_Localized: THWIP! CHOMP! GULP!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873157
+    m_Localized: Cough! Cough! Okay... mmm... I think... cough!... it's trying to
+      get out...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873158
+    m_Localized: I told you so. Thump your chest, that'll send it flying out.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873159
+    m_Localized: I can't... cough... no air! Paco! Get this beast out of my throat!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873160
+    m_Localized: Pepe?! Hey, don't joke around with this! Spit that bug out right
+      now!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873161
+    m_Localized: (Absolute silence in the swamp. Pepe collapses backward onto the
+      leaf)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873162
+    m_Localized: Pepe? Come on... get up. You can't die from a fly, that would be
+      the dumbest death in the county.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873163
+    m_Localized: What the...? Pepe! Come back here! Your body is still down here!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873164
+    m_Localized: Good heavens! Paco, I'm glowing! And I'm floating! This is not what
+      I wanted!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873165
+    m_Localized: If you think you're going to Heaven to eat clouds while I'm left
+      here all alone... you've got another thing coming.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21261873166
+    m_Localized: All my life practicing jumps for nothing. Pepe, I'm coming for you!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

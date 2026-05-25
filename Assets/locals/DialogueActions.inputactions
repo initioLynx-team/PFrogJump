@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "name": "DialogueActions",
+    "maps": [
+        {
+            "name": "dialogue",
+            "id": "3e2b755f-3d8e-4438-a7be-e3713590fc09",
+            "actions": [
+                {
+                    "name": "nextPage",
+                    "type": "Button",
+                    "id": "efbdd6aa-cc1b-4985-bf63-65d759e93693",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "48a40dbb-1c92-476b-a7bb-55c0adddc1c8",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "nextPage",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c07aa9fd-4a39-4e18-a25d-5c5ed6c53b81",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "nextPage",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

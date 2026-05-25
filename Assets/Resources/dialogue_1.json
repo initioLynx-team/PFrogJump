@@ -1,0 +1,20 @@
+{
+  "lines": [
+    { "type": "dialogue", "speaker": "Pepe", "charTexturePath": "Art/Textures/Pepe", "localizationKey": "Pepe.cin.01" },
+    { "type": "dialogue", "speaker": "Paco", "charTexturePath": "Art/Textures/Paco", "localizationKey": "Paco.cin.01" },
+    { "type": "dialogue", "speaker": "Pepe", "charTexturePath": "Art/Textures/Pepe", "localizationKey": "Pepe.cin.02" },
+    { "type": "dialogue", "speaker": "Paco", "charTexturePath": "Art/Textures/Paco", "localizationKey": "Paco.cin.02" },
+    { "type": "dialogue", "speaker": "Pepe", "charTexturePath": "Art/Textures/Pepe", "localizationKey": "Pepe.cin.03" },
+    { "type": "sfx", "speaker": "none", "charTexturePath": "", "localizationKey": "sfx.cin.01" },
+    { "type": "dialogue", "speaker": "Pepe", "charTexturePath": "Art/Textures/Pepe", "localizationKey": "Pepe.cin.04" },
+    { "type": "dialogue", "speaker": "Paco", "charTexturePath": "Art/Textures/Paco", "localizationKey": "Paco.cin.03" },
+    { "type": "dialogue", "speaker": "Pepe", "charTexturePath": "Art/Textures/Pepe", "localizationKey": "Pepe.cin.05" },
+    { "type": "dialogue", "speaker": "Paco", "charTexturePath": "Art/Textures/Paco", "localizationKey": "Paco.cin.04" },
+    { "type": "sfx", "speaker": "none", "charTexturePath": "", "localizationKey": "sfx.cin.02" },
+    { "type": "dialogue", "speaker": "Paco", "charTexturePath": "Art/Textures/Paco", "localizationKey": "Paco.cin.05" },
+    { "type": "dialogue", "speaker": "Paco", "charTexturePath": "Art/Textures/Paco", "localizationKey": "Paco.cin.06" },
+    { "type": "dialogue", "speaker": "Pepe", "charTexturePath": "Art/Textures/Pepe", "localizationKey": "Pepe.cin.07" },
+    { "type": "dialogue", "speaker": "Paco", "charTexturePath": "Art/Textures/Paco", "localizationKey": "Paco.cin.08" },
+    { "type": "dialogue", "speaker": "Paco", "charTexturePath": "Art/Textures/Paco", "localizationKey": "Paco.cin.09" }
+  ]
+}

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SSceneTp : MonoBehaviour
@@ -50,6 +51,7 @@ public class SSceneTp : MonoBehaviour
         if (sceneAsset != null)
         {
             sceneName = sceneAsset.name;
+            Debug.Log(sceneName);
         }
 #endif
     }

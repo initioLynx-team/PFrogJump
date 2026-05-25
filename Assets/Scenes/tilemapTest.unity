@@ -181,12 +181,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095436406038970752, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
       propertyPath: sceneName
-      value: zona 1
+      value: Dialogo_1
       objectReference: {fileID: 0}
     - target: {fileID: 8095436406038970752, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
       propertyPath: sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 370638cc89da63a4f9ecb87ea3665fb6, type: 3}
+      objectReference: {fileID: 102900000, guid: f28409be6281e814a909541ee5025540, type: 3}
     m_RemovedComponents:
     - {fileID: 8611318691553067843, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
     m_RemovedGameObjects: []
@@ -22622,8 +22622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SCamera
   target: {fileID: 609730989}
-  followSpeed: 5
-  offset: {x: 0, y: 0, z: -10}
+  smoothSpeed: 5
+  yOffset: 2
 --- !u!213 &1007445519
 Sprite:
   m_ObjectHideFlags: 0
