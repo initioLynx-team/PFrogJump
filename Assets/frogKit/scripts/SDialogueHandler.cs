@@ -41,7 +41,7 @@ public class SDialogueHandler : MonoBehaviour
     private int currentLineIndex = 0;
     private bool isWaitingForInput = false;
     private float inputAllowedTime = 3f;
-    
+
     void Start()
     {
         text.text = "...";
@@ -144,7 +144,6 @@ public class SDialogueHandler : MonoBehaviour
     void UpdateCharacterUI(RawImage rawImage, Texture2D texture, bool isSpeaking)
     {
         if (rawImage == null) return;
-
         if (texture != null)
         {
             rawImage.texture = texture;
@@ -154,7 +153,6 @@ public class SDialogueHandler : MonoBehaviour
         else
         {
             rawImage.enabled = false;
-            rawImage.color = isSpeaking ? Color.white : new Color(0.5f, 0.5f, 0.5f, 1f);
         }
     }
 
