@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 8bfba24d400aa6d41bed0beb562792bc
+guid: 4551e74f4767f754f8ef191c71782e0b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 128123251181392558
-    second: BG_Mid_Swamp_0
+      213: -4240413174498170545
+    second: Swamp_Zona2_Mid_0
+  - first:
+      213: -1765665665463528269
+    second: Swamp_Zona2_Mid_1
+  - first:
+      213: -4419202742046235931
+    second: Swamp_Zona2_Mid_2
+  - first:
+      213: 8642035678304397393
+    second: Swamp_Zona2_Mid_3
+  - first:
+      213: -1937075353772768170
+    second: Swamp_Zona2_Mid_4
+  - first:
+      213: -8821210224384084208
+    second: Swamp_Zona2_Mid_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,18 +55,18 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,30 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_Mid_Swamp_0
+      name: Swamp_Zona2_Mid_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 320
-        height: 165
+        y: 37
+        width: 56
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +130,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea2922a0b6f27c100800000000000000
-      internalID: 128123251181392558
+      spriteID: f4966293fa60725c0800000000000000
+      internalID: -4240413174498170545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swamp_Zona2_Mid_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 41
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b451f1ae681f77e0800000000000000
+      internalID: -1765665665463528269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swamp_Zona2_Mid_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 39
+        width: 65
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2e6e12586dba2c0800000000000000
+      internalID: -4419202742046235931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swamp_Zona2_Mid_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 19
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158e59579adaee770800000000000000
+      internalID: 8642035678304397393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swamp_Zona2_Mid_4
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 39
+        width: 65
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654c5339a302e15e0800000000000000
+      internalID: -1937075353772768170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swamp_Zona2_Mid_5
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 37
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017fa86a904c49580800000000000000
+      internalID: -8821210224384084208
       vertices: []
       indices: 
       edges: []
@@ -148,7 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_Mid_Swamp_0: 128123251181392558
+      Swamp_Zona2_Mid_0: -4240413174498170545
+      Swamp_Zona2_Mid_1: -1765665665463528269
+      Swamp_Zona2_Mid_2: -4419202742046235931
+      Swamp_Zona2_Mid_3: 8642035678304397393
+      Swamp_Zona2_Mid_4: -1937075353772768170
+      Swamp_Zona2_Mid_5: -8821210224384084208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
