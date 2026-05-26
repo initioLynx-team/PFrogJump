@@ -22,9 +22,11 @@ public class ChargingState : IFrogState
 
     public IFrogState Tick(SFrogController frog)
     {
+
         frog.CurrentChargePct = Mathf.Clamp01(_stateTimer / frog.maxChargeTime);
         if (!frog.isJumpHeld) return SFrogController.Jump;
         frog.HandleFacingDirection();
+        frog.indicatorLook.UpdateThrowDirection(frog.lookDirection,frog.CurrentChargePct);
         _stateTimer += Time.deltaTime;
         if (_stateTimer >= frog.maxChargeTime){
             _stateTimer = frog.maxChargeTime;
