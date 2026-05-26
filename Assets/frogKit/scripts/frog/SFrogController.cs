@@ -34,6 +34,7 @@ public class SFrogController : MonoBehaviour
     [Header("Materials")]
     public PhysicsMaterial2D ogPMat;
     public PhysicsMaterial2D slipperyPMat;
+    public PhysicsMaterial2D normalPMat;
 
 
     [Header("Ground Detection")]
@@ -56,14 +57,13 @@ public class SFrogController : MonoBehaviour
     public Vector2 lookDirection;
     public Vector2 movement;
     public bool isTonguePressed;
-    public bool isOnSlipperyFloor;
+    public bool isOnSlipperyFloor = false;
     public bool isJumpHeld;
     public bool doubleJump;
     public int throwCount;
     public float progressTrowing = 0;
     public Vector2 stickyTarget;
     public float CurrentChargePct = 0;
-
 
     public Rigidbody2D Rb { get; private set; }
     public STongueComponent Tongue { get; private set; }
@@ -126,7 +126,8 @@ public class SFrogController : MonoBehaviour
         Debug.Log($"State: {newState.GetType().Name}");
     }
 
-    public bool CheckGroundLayer() => Physics2D.OverlapBox(groundCheckPoint.position, groundCheckPoint.lossyScale, 0f, groundLayer);
+public bool CheckGroundLayer() => 
+    Physics2D.OverlapBox(groundCheckPoint.position, new Vector2(Mathf.Abs(groundCheckPoint.lossyScale.x), Mathf.Abs(groundCheckPoint.lossyScale.y)), 0f, groundLayer);
     public void HandleFacingDirection()
     {
         if (lookDirection.x > 0.1f)
@@ -166,7 +167,15 @@ public class SFrogController : MonoBehaviour
         }
     }
 
-
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheckPoint != null)
+        {
+        Gizmos.color = Color.green;
+        Vector3 absoluteScale = new Vector3(Mathf.Abs(groundCheckPoint.lossyScale.x), Mathf.Abs(groundCheckPoint.lossyScale.y), 1f);
+        Gizmos.DrawWireCube(groundCheckPoint.position, absoluteScale);
+        }
+    }
     public void PlaySFX(AudioClip clip, bool randomizePitch = true)
     {
         if (clip == null || sfxSource == null) return;

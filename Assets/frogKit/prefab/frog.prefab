@@ -239,7 +239,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00021371245, y: -0.03187263}
+  m_Offset: {x: 0.002192974, y: -0.021042347}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -249,7 +249,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8398697, y: 1.063745}
+  m_Size: {x: 0.84468305, y: 1.0420845}
   m_EdgeRadius: 0
 --- !u!114 &2009191050929178205
 MonoBehaviour:
@@ -304,6 +304,7 @@ MonoBehaviour:
   releaseBoost: 6
   ogPMat: {fileID: 6200000, guid: f0a32c19a26f2ef4eb43dd8b59885a3b, type: 2}
   slipperyPMat: {fileID: 6200000, guid: 8124b4b581993104697a6addf31b32e4, type: 2}
+  normalPMat: {fileID: 6200000, guid: 8124b4b581993104697a6addf31b32e4, type: 2}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -442,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SIndicatorLook
   indicator: {fileID: 8764973622127149193}
-  lookDistance: 2
+  lookDistance: 1
   maxDistance: 3
   appearSpeed: 2.5
   deadzone: 0.152
@@ -457,8 +458,8 @@ MonoBehaviour:
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 26985
-    ctime2: 49151
+    ctime1: 35273
+    ctime2: 61873
     ctime3: 0
     ctime4: 0
     ctime5: 0
@@ -593,7 +594,7 @@ Transform:
   m_GameObject: {fileID: 8656780080279643895}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0021, y: -0.5357, z: 0}
+  m_LocalPosition: {x: 0.0021, y: -0.598, z: 0}
   m_LocalScale: {x: 0.8107961, y: 0.09094454, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
