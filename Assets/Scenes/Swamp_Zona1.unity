@@ -1044,15 +1044,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 746273050318602789, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: moveSpeed
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 746273050318602789, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
-      propertyPath: defaultGravity
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 746273050318602789, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
+      propertyPath: defaultGravity
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 746273050318602789, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: groundCheckRadius
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2200857619669752424, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_Name
