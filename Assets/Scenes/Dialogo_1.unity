@@ -798,7 +798,7 @@ MonoBehaviour:
   text: {fileID: 382560827}
   jsonFileName: dialogue_1
   localizationTableName: local - Cinem_Inicio
-  nextSceneName: tutorial
+  nextSceneName: Swamp_Zona1
   initialInputDelay: 3
 --- !u!114 &1979569214
 MonoBehaviour:
