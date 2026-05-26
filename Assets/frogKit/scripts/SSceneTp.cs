@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
-
+using System.Collections;
+using UnityEngine.SceneManagement;
 public class SSceneTp : MonoBehaviour
 {
 
@@ -32,19 +33,21 @@ public class SSceneTp : MonoBehaviour
 
             if (rb != null)
             {
-                SceneTransition st = FindAnyObjectByType<SceneTransition>();
-                if (st != null)
-                {
-                    st.LoadNextScene(sceneName);
-                }
-                else
-                {
-                    Debug.LogError("SceneTransition not found");
-                }
+                LoadNextScene(sceneName);
             }
         }
     }
+    public void LoadNextScene(string sceneName)
+    {
+        StartCoroutine(TransitionRoutine(sceneName));
+    }
 
+    IEnumerator TransitionRoutine(string sceneName)
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        SceneManager.LoadScene(sceneName);
+    }
     private void OnValidate()
     {
 #if UNITY_EDITOR
