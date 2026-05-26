@@ -172,18 +172,25 @@ public class SDialogueHandler : MonoBehaviour
     void EndDialogue()
     {
         text.text = "";
-        gameObject.SetActive(false);
-
         if (!string.IsNullOrEmpty(nextSceneName))
         {
             Debug.Log($"Dialogue finished. Loading scene: {nextSceneName}");
-            SceneManager.LoadScene(nextSceneName);
+            LoadNextScene(nextSceneName);
         }
         else
         {
             Debug.LogWarning("Dialogue finished, but no Next Scene Name was assigned in the inspector.");
-            gameObject.SetActive(false);
         }
     }
+    public void LoadNextScene(string sceneName)
+    {
+        StartCoroutine(TransitionRoutine(sceneName));
+    }
 
+    IEnumerator TransitionRoutine(string sceneName)
+    {
+        yield return new WaitForSeconds(0.2f);
+
+        SceneManager.LoadScene(sceneName);
+    }
 }
