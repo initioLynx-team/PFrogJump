@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: aa1afb2c58ad3d84293a236b700bce4b
+guid: 1c56604ae75ae3243989c51a91ae0dde
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8290045290698133279
-    second: BG_Mild2_Swamp_0
-  - first:
-      213: 8142360967055180386
-    second: BG_Mild2_Swamp_1
+      213: 5863399107899140791
+    second: BG_Front2_Swamp_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,21 +37,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_Mild2_Swamp_0
+      name: BG_Front2_Swamp_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 165
+        width: 320
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,30 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e0b90c0bb7d3fc80800000000000000
-      internalID: -8290045290698133279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BG_Mild2_Swamp_1
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 0
-        width: 107
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2628452d82a7ff070800000000000000
-      internalID: 8142360967055180386
+      spriteID: 7baabaa4c6afe5150800000000000000
+      internalID: 5863399107899140791
       vertices: []
       indices: 
       edges: []
@@ -176,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_Mild2_Swamp_0: -8290045290698133279
-      BG_Mild2_Swamp_1: 8142360967055180386
+      BG_Front2_Swamp_0: 5863399107899140791
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

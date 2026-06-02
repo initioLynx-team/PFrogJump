@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: aa1afb2c58ad3d84293a236b700bce4b
+guid: 58ec57833dca30247921a86b3c4e1771
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8290045290698133279
-    second: BG_Mild2_Swamp_0
+      213: 128123251181392558
+    second: BG_Mid_Swamp_0
   - first:
-      213: 8142360967055180386
-    second: BG_Mild2_Swamp_1
+      213: 171126352951171777
+    second: BG_Mid_Swamp_1
+  - first:
+      213: -6623692295140595912
+    second: BG_Mid_Swamp_2
+  - first:
+      213: 4427536141414974728
+    second: BG_Mid_Swamp_3
+  - first:
+      213: 8208478521815381396
+    second: BG_Mid_Swamp_4
+  - first:
+      213: -9208014493002708540
+    second: BG_Mid_Swamp_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,21 +52,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +129,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_Mild2_Swamp_0
+      name: BG_Mid_Swamp_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 128
-        height: 165
+        y: 37
+        width: 56
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e0b90c0bb7d3fc80800000000000000
-      internalID: -8290045290698133279
+      spriteID: ea2922a0b6f27c100800000000000000
+      internalID: 128123251181392558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BG_Mild2_Swamp_1
+      name: BG_Mid_Swamp_1
       rect:
         serializedVersion: 2
-        x: 213
-        y: 0
-        width: 107
-        height: 79
+        x: 70
+        y: 41
+        width: 16
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +178,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2628452d82a7ff070800000000000000
-      internalID: 8142360967055180386
+      spriteID: 1cadc57e286ff5200800000000000000
+      internalID: 171126352951171777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Mid_Swamp_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 39
+        width: 65
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83727ae83fae314a0800000000000000
+      internalID: -6623692295140595912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Mid_Swamp_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 19
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8054e3b99a4c17d30800000000000000
+      internalID: 4427536141414974728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Mid_Swamp_4
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 39
+        width: 65
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495ba37a9bf5ae170800000000000000
+      internalID: 8208478521815381396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Mid_Swamp_5
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 37
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9cce1da9f863080800000000000000
+      internalID: -9208014493002708540
       vertices: []
       indices: 
       edges: []
@@ -176,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_Mild2_Swamp_0: -8290045290698133279
-      BG_Mild2_Swamp_1: 8142360967055180386
+      BG_Mid_Swamp_0: 128123251181392558
+      BG_Mid_Swamp_1: 171126352951171777
+      BG_Mid_Swamp_2: -6623692295140595912
+      BG_Mid_Swamp_3: 4427536141414974728
+      BG_Mid_Swamp_4: 8208478521815381396
+      BG_Mid_Swamp_5: -9208014493002708540
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
