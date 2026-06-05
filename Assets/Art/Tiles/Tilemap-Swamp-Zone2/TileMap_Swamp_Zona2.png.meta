@@ -162,8 +162,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1fc627a548de1c48b1d1b2eb432ddc4
-      internalID: 703588069
+      spriteID: 8695509206b2ff14aaec325dee7e2d89
+      internalID: 1814788052
       vertices: []
       indices: 
       edges: []
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf4c91c561d5354585c40554fa2ae6c
-      internalID: -1083613542
+      spriteID: e001872290af38448ad99e1041814548
+      internalID: 1820018251
       vertices: []
       indices: 
       edges: []
@@ -206,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19698afc8a68bb440a62a79c9fc0fbde
-      internalID: 523452388
+      spriteID: cc5be956492f911409be7cabc48593c1
+      internalID: 1265438484
       vertices: []
       indices: 
       edges: []
@@ -216,8 +216,8 @@ TextureImporter:
       name: TileMap_Swamp_Zona2_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
+        x: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46a8356739e90d44bab841494b878461
-      internalID: -1210829948
+      spriteID: e7765d5d2dd759845945c72f2bec8996
+      internalID: 1469332175
       vertices: []
       indices: 
       edges: []
@@ -238,8 +238,8 @@ TextureImporter:
       name: TileMap_Swamp_Zona2_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 192
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9329b19ecfd8b8e44a107bb3b38d85c1
-      internalID: 971653590
+      spriteID: 9211b04abe7261b4890130e303a43681
+      internalID: 54950358
       vertices: []
       indices: 
       edges: []
@@ -260,8 +260,8 @@ TextureImporter:
       name: TileMap_Swamp_Zona2_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -272,8 +272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4a1c7a58a0d44a459ec25974ad78bb8
-      internalID: -51231658
+      spriteID: bf930d70ef3ef594da76fc66feaab5dc
+      internalID: 1867701391
       vertices: []
       indices: 
       edges: []
@@ -282,7 +282,7 @@ TextureImporter:
       name: TileMap_Swamp_Zona2_8
       rect:
         serializedVersion: 2
-        x: 128
+        x: 0
         y: 192
         width: 32
         height: 32
@@ -294,8 +294,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2050c846f1a60ce4fa6ceeebc3a93956
-      internalID: 1146033066
+      spriteID: 53f48e6e4514cc24bb4347720adcec60
+      internalID: -374742542
       vertices: []
       indices: 
       edges: []
@@ -304,7 +304,7 @@ TextureImporter:
       name: TileMap_Swamp_Zona2_9
       rect:
         serializedVersion: 2
-        x: 160
+        x: 32
         y: 192
         width: 32
         height: 32
@@ -316,8 +316,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10cc63af6d49574eb02d02ec06372ac
-      internalID: -141424029
+      spriteID: 0f45fefa4e78e6d4ca49d2de0756afe4
+      internalID: -1176657608
       vertices: []
       indices: 
       edges: []
@@ -326,7 +326,7 @@ TextureImporter:
       name: TileMap_Swamp_Zona2_10
       rect:
         serializedVersion: 2
-        x: 192
+        x: 64
         y: 192
         width: 32
         height: 32
@@ -338,8 +338,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4383a7288dbb1154e8289bd837dd6139
-      internalID: -878542679
+      spriteID: 3b9a2499c631a9546b7201e182b0f68c
+      internalID: 4830813
       vertices: []
       indices: 
       edges: []
@@ -348,6 +348,94 @@ TextureImporter:
       name: TileMap_Swamp_Zona2_11
       rect:
         serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6854a5f4f15225549b95c50005f79ac7
+      internalID: 194839812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a68774909ac1e44b69fb6671a2440a
+      internalID: -226851701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c818ed2f03aaed949a2e838b41855bdc
+      internalID: 400988421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c5d5e560a39fe44b3130f8faa59279
+      internalID: -408133974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_15
+      rect:
+        serializedVersion: 2
         x: 224
         y: 192
         width: 32
@@ -360,14 +448,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1b2273cdb90c6a4896dc841f565a549
-      internalID: 1568327589
+      spriteID: 7790c61ad575dca4f84ec13744769d86
+      internalID: -241752615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_12
+      name: TileMap_Swamp_Zona2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa26b65f970616f4cab3db42f54d8069
+      internalID: -486652999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_17
       rect:
         serializedVersion: 2
         x: 32
@@ -382,14 +492,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ceb016ca2e0b7048a33fe4a6d4e514f
-      internalID: 515640993
+      spriteID: bae48607be335f74fbde7331ef35d440
+      internalID: -1674448463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_13
+      name: TileMap_Swamp_Zona2_18
       rect:
         serializedVersion: 2
         x: 64
@@ -404,14 +514,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be9086eb66c7abe48adb80964adc9ef2
-      internalID: 2132886173
+      spriteID: 2c176e1964a3f0745956f373bcfef3c4
+      internalID: -799782034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_14
+      name: TileMap_Swamp_Zona2_19
       rect:
         serializedVersion: 2
         x: 96
@@ -426,14 +536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 811dffb56e2482a47a6f509dcc19ffd1
-      internalID: -837573855
+      spriteID: de96e887428431248becb0638afc8f5a
+      internalID: -1275171819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_15
+      name: TileMap_Swamp_Zona2_20
       rect:
         serializedVersion: 2
         x: 128
@@ -448,14 +558,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be5bbfa83efccfe458d02e04d71c272d
-      internalID: 1730994744
+      spriteID: e28d677005768ea4fb806fdf986be033
+      internalID: 1013341236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_16
+      name: TileMap_Swamp_Zona2_21
       rect:
         serializedVersion: 2
         x: 160
@@ -470,14 +580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a9890deef70da43b6af1dcab537ee6
-      internalID: 885949129
+      spriteID: 548230ff5bfa6724ab6600a97f1e1034
+      internalID: -794642447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_17
+      name: TileMap_Swamp_Zona2_22
       rect:
         serializedVersion: 2
         x: 192
@@ -492,14 +602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e9af747cfc4be54faa06cc6be32c94b
-      internalID: 1454868688
+      spriteID: 89068d163a974f244aa279142a509952
+      internalID: 1810138653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_18
+      name: TileMap_Swamp_Zona2_23
       rect:
         serializedVersion: 2
         x: 224
@@ -514,118 +624,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42fe5a4b97a36e24e90a603213a6716f
-      internalID: 1717289818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_19
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91a68fe74c919f84686441354c0ca893
-      internalID: -36304437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_20
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9e9657d33f1ec640a02991f3ae1b6ed
-      internalID: 1789534708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_21
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0c0fb9e7bae330459818c63a435b65e
-      internalID: 1882858941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_22
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c86e40cf173451044b7ecbdd0dfc8315
-      internalID: 1104582857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_23
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a1a172700fd58a4ab4904465c08ccea
-      internalID: 1305738116
+      spriteID: 06a17567857c73f4bb483d08c1841b8d
+      internalID: -563175909
       vertices: []
       indices: 
       edges: []
@@ -634,8 +634,8 @@ TextureImporter:
       name: TileMap_Swamp_Zona2_24
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -646,8 +646,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b80c6b07abbb7424798aa8cc4fee0360
-      internalID: -793509478
+      spriteID: 69208660d82a11a4397940efebf1446c
+      internalID: -1451353046
       vertices: []
       indices: 
       edges: []
@@ -657,7 +657,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -668,8 +668,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfe640a4f35f8984bb40512f7b8cd0a6
-      internalID: -855325880
+      spriteID: 999003809e7618f46afde8ed827becef
+      internalID: 1116674938
       vertices: []
       indices: 
       edges: []
@@ -679,7 +679,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -690,14 +690,168 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28c7054f4b9061f4f9c8ad459b6b7396
-      internalID: -67544052
+      spriteID: ac0c6f83f40630e4dabf6bfc9630c180
+      internalID: -1182661155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: TileMap_Swamp_Zona2_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61b5140950c62f4ca0891821b1ab47e
+      internalID: 406079451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3609733efc5d08b4ca6152cd187a264b
+      internalID: -1009145675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c77f1341c78fb4b800caf33905144a
+      internalID: 1511437445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c7990c4bbdb4945b89042d88ca4315
+      internalID: 309011311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d324382aef6e17941bedac53ae75835d
+      internalID: -1851893400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8630a8a1269a14845b5113e6555e904c
+      internalID: 1567067262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b35e6100290b4b40a622dde2c852952
+      internalID: 813282183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_34
       rect:
         serializedVersion: 2
         x: 96
@@ -712,14 +866,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f215dc4a6893ea4a9a74f7b1f1936aa
-      internalID: 1575760589
+      spriteID: 8189ae49e79ccd847af778518bb3e344
+      internalID: -1050101459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_Swamp_Zona2_28
+      name: TileMap_Swamp_Zona2_35
       rect:
         serializedVersion: 2
         x: 128
@@ -734,8 +888,316 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2aad251feeee7341bd36795daf334ed
-      internalID: -1035626283
+      spriteID: 490d76e5c3741704d9f08233fc1cc1c2
+      internalID: -529106866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c4874908683054696d2b478558d86b
+      internalID: -2146715882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accbd228c030a4c42995807859aaf25c
+      internalID: -1838693247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413ab7cf0b5ecf845a9ff4752dafa856
+      internalID: 588978655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d20317f4e7b5f045919afa658bd5553
+      internalID: 995007928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8ff34530901a44882b3f2c6c31f3e5
+      internalID: -61268218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74ea5ea57c902f4ea27be42b82d2d9a
+      internalID: 1879529028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743ac09a7a6e6a140af542518ace91cd
+      internalID: -809309804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_43
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e3f07fede18834ba87984cc748d4ec
+      internalID: 347840618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7176e6239f2e264ca0081b0e26bbcc6
+      internalID: 600759224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d1aacecd5b2d24ba51d6663b9ef71e
+      internalID: 900375005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ab1fbcdb111f04085c44771616dc16
+      internalID: 493387650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca9e2453bb44544d83a535a84cdf69d
+      internalID: 1587940126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde6420285f9ba24790142391a77c4b1
+      internalID: 1928917907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMap_Swamp_Zona2_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e559c45e4af4a6b48b86d24b9b855c4d
+      internalID: -1958914333
       vertices: []
       indices: 
       edges: []
@@ -744,7 +1206,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8d08600e4b6b8e45ae972666209ea17
+    spriteID: 7d40b4ba3013f9748bb687ff60f215b3
     internalID: 0
     vertices: []
     indices: 
@@ -754,37 +1216,58 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       TileMap_Swamp_Zona2_0: -3663891706027088995
       TileMap_Swamp_Zona2_1: 2779591725193007441
-      TileMap_Swamp_Zona2_10: -878542679
-      TileMap_Swamp_Zona2_11: 1568327589
-      TileMap_Swamp_Zona2_12: 515640993
-      TileMap_Swamp_Zona2_13: 2132886173
-      TileMap_Swamp_Zona2_14: -837573855
-      TileMap_Swamp_Zona2_15: 1730994744
-      TileMap_Swamp_Zona2_16: 885949129
-      TileMap_Swamp_Zona2_17: 1454868688
-      TileMap_Swamp_Zona2_18: 1717289818
-      TileMap_Swamp_Zona2_19: -36304437
-      TileMap_Swamp_Zona2_2: 703588069
-      TileMap_Swamp_Zona2_20: 1789534708
-      TileMap_Swamp_Zona2_21: 1882858941
-      TileMap_Swamp_Zona2_22: 1104582857
-      TileMap_Swamp_Zona2_23: 1305738116
-      TileMap_Swamp_Zona2_24: -793509478
-      TileMap_Swamp_Zona2_25: -855325880
-      TileMap_Swamp_Zona2_26: -67544052
-      TileMap_Swamp_Zona2_27: 1575760589
-      TileMap_Swamp_Zona2_28: -1035626283
-      TileMap_Swamp_Zona2_3: -1083613542
-      TileMap_Swamp_Zona2_4: 523452388
-      TileMap_Swamp_Zona2_5: -1210829948
-      TileMap_Swamp_Zona2_6: 971653590
-      TileMap_Swamp_Zona2_7: -51231658
-      TileMap_Swamp_Zona2_8: 1146033066
-      TileMap_Swamp_Zona2_9: -141424029
+      TileMap_Swamp_Zona2_10: 4830813
+      TileMap_Swamp_Zona2_11: 194839812
+      TileMap_Swamp_Zona2_12: -226851701
+      TileMap_Swamp_Zona2_13: 400988421
+      TileMap_Swamp_Zona2_14: -408133974
+      TileMap_Swamp_Zona2_15: -241752615
+      TileMap_Swamp_Zona2_16: -486652999
+      TileMap_Swamp_Zona2_17: -1674448463
+      TileMap_Swamp_Zona2_18: -799782034
+      TileMap_Swamp_Zona2_19: -1275171819
+      TileMap_Swamp_Zona2_2: 1814788052
+      TileMap_Swamp_Zona2_20: 1013341236
+      TileMap_Swamp_Zona2_21: -794642447
+      TileMap_Swamp_Zona2_22: 1810138653
+      TileMap_Swamp_Zona2_23: -563175909
+      TileMap_Swamp_Zona2_24: -1451353046
+      TileMap_Swamp_Zona2_25: 1116674938
+      TileMap_Swamp_Zona2_26: -1182661155
+      TileMap_Swamp_Zona2_27: 406079451
+      TileMap_Swamp_Zona2_28: -1009145675
+      TileMap_Swamp_Zona2_29: 1511437445
+      TileMap_Swamp_Zona2_3: 1820018251
+      TileMap_Swamp_Zona2_30: 309011311
+      TileMap_Swamp_Zona2_31: -1851893400
+      TileMap_Swamp_Zona2_32: 1567067262
+      TileMap_Swamp_Zona2_33: 813282183
+      TileMap_Swamp_Zona2_34: -1050101459
+      TileMap_Swamp_Zona2_35: -529106866
+      TileMap_Swamp_Zona2_36: -2146715882
+      TileMap_Swamp_Zona2_37: -1838693247
+      TileMap_Swamp_Zona2_38: 588978655
+      TileMap_Swamp_Zona2_39: 995007928
+      TileMap_Swamp_Zona2_4: 1265438484
+      TileMap_Swamp_Zona2_40: -61268218
+      TileMap_Swamp_Zona2_41: 1879529028
+      TileMap_Swamp_Zona2_42: -809309804
+      TileMap_Swamp_Zona2_43: 347840618
+      TileMap_Swamp_Zona2_44: 600759224
+      TileMap_Swamp_Zona2_45: 900375005
+      TileMap_Swamp_Zona2_46: 493387650
+      TileMap_Swamp_Zona2_47: 1587940126
+      TileMap_Swamp_Zona2_48: 1928917907
+      TileMap_Swamp_Zona2_49: -1958914333
+      TileMap_Swamp_Zona2_5: 1469332175
+      TileMap_Swamp_Zona2_6: 54950358
+      TileMap_Swamp_Zona2_7: 1867701391
+      TileMap_Swamp_Zona2_8: -374742542
+      TileMap_Swamp_Zona2_9: -1176657608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
