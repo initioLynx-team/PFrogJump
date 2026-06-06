@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Swamp_Zona1.unity
     guid: 496ad72775ba1764b903976f278075c8
+  - enabled: 1
+    path: Assets/Scenes/Dialogo_2.unity
+    guid: 3635bf91255e9f94f89c8f53366173c2
+  - enabled: 1
+    path: Assets/Scenes/Swamp_Zona2.unity
+    guid: 72abfac8cc0ffea469d722b334ec70ee
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 86feae162c12e4046938977ff2440027, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -1,0 +1,28 @@
+{
+  "lines": [
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona2.01"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "right",
+      "charTexturePath": "Paco",
+      "localizationKey": "Paco.zona2.01"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona2.02"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "right",
+      "charTexturePath": "Paco",
+      "localizationKey": "Paco.zona2.02"
+    }
+  ]
+}

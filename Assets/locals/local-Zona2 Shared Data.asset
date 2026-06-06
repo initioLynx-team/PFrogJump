@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: local-Zona2 Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: local-Zona2
+  m_TableCollectionNameGuidString: b38fbcc106e4704479d6e13ee5820c48
+  m_Entries:
+  - m_Id: 90313265152
+    m_Key: Pepe.zona2.01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 261445062656
+    m_Key: Paco.zona2.01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308060557312
+    m_Key: Pepe.zona2.02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 686294503424
+    m_Key: Paco.zona2.02
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4114551885821640778
+  references:
+    version: 2
+    RefIds:
+    - rid: 4114551885821640778
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1780775013930

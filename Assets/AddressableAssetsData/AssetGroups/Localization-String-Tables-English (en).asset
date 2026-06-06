@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-English (en)
   m_GUID: d20656c54764c0146a958879d75ad2e9
   m_SerializeEntries:
+  - m_GUID: 47d95ff84d631fe47a7978a43886f6cd
+    m_Address: local-Zona2_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 71f3784222ac244468bca2e45c11af60
     m_Address: local - Cinem_Inicio_en
     m_ReadOnly: 1

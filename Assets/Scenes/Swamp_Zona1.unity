@@ -259,6 +259,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
   cameraTransform: {fileID: 951715573}
   parallaxFactor: 0.02
+--- !u!1001 &56622459
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1257404206103735795, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_Name
+      value: TransitionScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.3465824
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 54.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696352614381312877, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095436406038970752, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: sceneName
+      value: Dialogo_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095436406038970752, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
+      propertyPath: sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 3635bf91255e9f94f89c8f53366173c2, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e90c1ff7ba8a2b54fad9b6b372d9a6cf, type: 3}
 --- !u!1001 &59036135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -965,11 +1034,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.968
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.631
+      value: 51.51
       objectReference: {fileID: 0}
     - target: {fileID: 4086902946562197766, guid: 13b2abeb1f6a3414ea89f4ee2a576bb6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12680,3 +12749,4 @@ SceneRoots:
   - {fileID: 1636355631}
   - {fileID: 1225006872}
   - {fileID: 579747428}
+  - {fileID: 56622459}
