@@ -23,6 +23,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Swamp_Zona2.unity
     guid: 72abfac8cc0ffea469d722b334ec70ee
+  - enabled: 1
+    path: Assets/Scenes/Transitio-Zona3.unity
+    guid: 5f962d4c706f1f14fb3af98cd30a5f4b
+  - enabled: 1
+    path: Assets/Scenes/Swamp_Zona3.unity
+    guid: 300f4abed3f1bab49b9693d4b0a96340
+  - enabled: 1
+    path: Assets/Scenes/Dialogo_3.unity
+    guid: 54c4c91a84c61974c905decde748e566
+  - enabled: 1
+    path: Assets/Scenes/ToBeContinued.unity
+    guid: 8dd1772b6f6a83e4f81443ffd599b5fb
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 86feae162c12e4046938977ff2440027, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

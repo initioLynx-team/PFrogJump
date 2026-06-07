@@ -1,0 +1,64 @@
+{
+  "lines": [
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona3.01"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "right",
+      "charTexturePath": "Paco",
+      "localizationKey": "Paco.zona3.01"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona3.02"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "right",
+      "charTexturePath": "Paco",
+      "localizationKey": "Paco.zona3.02"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona3.03"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona3.04"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona3.05"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona3.06"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "left",
+      "charTexturePath": "Pepe",
+      "localizationKey": "Pepe.zona3.07"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "right",
+      "charTexturePath": "Paco",
+      "localizationKey": "Paco.zona3.03"
+    }
+  ]
+}
