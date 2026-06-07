@@ -10,9 +10,11 @@ public class Checkpoint : MonoBehaviour
 
         if (playerRespawn != null)
         {
+            if(respawnPoint == null)
+            {
+                Debug.Log("Checkpoint activado");
+            }
             playerRespawn.SetRespawnPoint(respawnPoint);
-
-            Debug.Log("Checkpoint activado");
         }
     }
 }
