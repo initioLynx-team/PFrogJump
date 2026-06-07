@@ -17,7 +17,23 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: b38fbcc106e4704479d6e13ee5820c48, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 90313265152
+    m_Localized: '"Great, Paco! You have passed the first zone of the swamp."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 261445062656
+    m_Localized: "\xBFFirst zone?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308060557312
+    m_Localized: '"Awesome... now we''ve gotta leap across the tree canopies..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 686294503424
+    m_Localized: "\xA1\xA1\xA1\xBF\xBFWhaattttt??!!!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

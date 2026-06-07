@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 6c4b6a0939512ad4eb156a3c40d1bcdc, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 521961672704
+    m_Localized: "\xA1\xA1\xA1\xA1OMG!!!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31865638912
+    m_Localized: "\xA1\xA1\xA1\xA1OMG!!!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70235131904
+    m_Localized: '!Pepe! I''m here!!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95027662848
+    m_Localized: Hmm... I don't think so...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 210308108288
+    m_Localized: What do you mean? It said right at the top that you were here...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257976373248
+    m_Localized: I'm afraid this is only the beginning...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 326024761344
+    m_Localized: You still have the mangroves to see...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370543104000
+    m_Localized: ...the dark and gloomy caves....
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408820322304
+    m_Localized: ...the fierce storm...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 449177915392
+    m_Localized: ...before reaching heaven...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
